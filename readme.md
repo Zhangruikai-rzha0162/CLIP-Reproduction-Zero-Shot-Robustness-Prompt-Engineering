@@ -72,5 +72,7 @@ pip install -r requirements.txt
 
 # Fine-grained Classification
 <img src="results/finegrained_prompt_comparison.png" width="800"/>
-Note: Flowers-102 accuracy appears unusually low. This is likely due to a class-name mismatch between the dataset labels and the CLIP text prompts. Consider verifying classnames in eval_finegrained.py.
 
+Note: Flowers-102 accuracy appears unusually low. This is likely due to a class-name mismatch between the dataset labels and the CLIP text prompts. Consider verifying classnames in :
+
+`eval_finegrained.py`
