@@ -19,8 +19,11 @@ python main.py
 
 # Or run modules independently
 python train_resnet.py --dataset CIFAR10 --epochs 30
+
 python eval_prompt.py
+
 python eval_robustness.py
+
 python eval_finegrained.py
 
 ### Prompt Engineering Results (Wilson 95% CI)
@@ -68,3 +71,10 @@ python eval_finegrained.py
 # Fine-grained Classification
 <img src="results/finegrained_prompt_comparison.png" width="800"/>
 Note: Flowers-102 accuracy appears unusually low. This is likely due to a class-name mismatch between the dataset labels and the CLIP text prompts. Consider verifying classnames in eval_finegrained.py.
+
+## Quick Start
+
+### One-Click Full Pipeline (Recommended)
+`main.py` automatically detects missing ResNet baselines and trains them on demand before running evaluations:
+
+python main.py
