@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.env/
+*.egg-info/
+
+# Datasets and model weights (too large for Git)
+data/
+*.pth
+*.pt
+*.ckpt
+
+# Experiment outputs (regenerable)
+clip_reproduction_results/
+*.png
+*.jpg
+*.jpeg
+
+# Jupyter checkpoints (if any)
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

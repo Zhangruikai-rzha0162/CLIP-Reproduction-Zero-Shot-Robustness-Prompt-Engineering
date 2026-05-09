@@ -1,0 +1,13 @@
+# Core deep learning stack
+torch>=2.0.0
+torchvision>=0.15.0
+
+# CLIP official implementation
+git+https://github.com/openai/CLIP.git
+
+# Scientific & utilities
+numpy>=1.24.0
+scipy>=1.10.0
+tqdm>=4.65.0
+opencv-python>=4.7.0
+matplotlib>=3.7.0
