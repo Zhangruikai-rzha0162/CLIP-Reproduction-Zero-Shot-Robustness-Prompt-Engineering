@@ -10,7 +10,7 @@ Reproduction of core CLIP paper experiments on consumer hardware (RTX 5060 Lapto
 
 ## Quick Start
 
-```bash
+
 # 1. Install dependencies
 pip install -r requirements.txt
 
