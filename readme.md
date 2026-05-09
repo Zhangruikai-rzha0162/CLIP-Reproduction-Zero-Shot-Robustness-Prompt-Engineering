@@ -37,8 +37,8 @@ python eval_finegrained.py
 |           | CLIP + Contextless  | 96.24%         | [95.80, 96.63]   | +27.47%     | 99.90%         |
 |           | CLIP + Prompted     | 97.29%         | [96.91, 97.62]   | +28.52%     | 99.98%         |
 
-### Prompt Engineering (Figure 4 Reproduction)
-[Prompt Engineering Comparison](https://raw.githubusercontent.com/Zhangruikai-rzha0162/CLIP-Reproduction-Zero-Shot-Robustness-Prompt-Engineering/main/results/figure4_complete_comparison.png)
+# Prompt Engineering (Figure 4 Reproduction)
+![Prompt Engineering Comparison](https://raw.githubusercontent.com/Zhangruikai-rzha0162/CLIP-Reproduction-Zero-Shot-Robustness-Prompt-Engineering/main/results/figure4_complete_comparison.png)
 
 ### Robustness Metrics Summary  
 *Effective Robustness = Acc<sub>corrupted</sub> / Acc<sub>clean</sub>*
@@ -51,8 +51,8 @@ python eval_finegrained.py
 | Contrast   | 0.901 | 0.829  | +0.072         |
 | **Average**| **0.865** | **0.883** | **-0.018** |
 
-### Robustness Analysis
-[Robustness Curves](https://raw.githubusercontent.com/Zhangruikai-rzha0162/CLIP-Reproduction-Zero-Shot-Robustness-Prompt-Engineering/main/results/robustness_comparison.png)
+# Robustness Analysis
+![Robustness Curves](https://raw.githubusercontent.com/Zhangruikai-rzha0162/CLIP-Reproduction-Zero-Shot-Robustness-Prompt-Engineering/main/results/robustness_comparison.png)
 
 ### Fine-grained Classification Results
 
@@ -65,6 +65,6 @@ python eval_finegrained.py
 |                  | Generic Ensemble | 0.99          | 1.24                   |
 |                  | Domain Specific  | 0.54          | 1.00                   |
 
-### Fine-grained Classification
-[Fine-grained Prompt Comparison](https://raw.githubusercontent.com/Zhangruikai-rzha0162/CLIP-Reproduction-Zero-Shot-Robustness-Prompt-Engineering/main/results/finegrained_prompt_comparison.png)
+# Fine-grained Classification
+![Fine-grained Prompt Comparison](https://raw.githubusercontent.com/Zhangruikai-rzha0162/CLIP-Reproduction-Zero-Shot-Robustness-Prompt-Engineering/main/results/finegrained_prompt_comparison.png)
 Note: Flowers-102 accuracy appears unusually low. This is likely due to a class-name mismatch between the dataset labels and the CLIP text prompts. Consider verifying classnames in eval_finegrained.py.
