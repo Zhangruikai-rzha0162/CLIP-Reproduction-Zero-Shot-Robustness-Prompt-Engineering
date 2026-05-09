@@ -15,16 +15,16 @@ Reproduction of core CLIP paper experiments on consumer hardware (RTX 5060 Lapto
 pip install -r requirements.txt
 
 # 2. Run the full pipeline
-python main.py
+ main.py
 
 # Or run modules independently
-python train_resnet.py --dataset CIFAR10 --epochs 30
+ train_resnet.py --dataset CIFAR10 --epochs 30
 
-python eval_prompt.py
+ eval_prompt.py
 
-python eval_robustness.py
+ eval_robustness.py
 
-python eval_finegrained.py
+ eval_finegrained.py
 
 ### Prompt Engineering Results (Wilson 95% CI)
 
@@ -77,4 +77,4 @@ Note: Flowers-102 accuracy appears unusually low. This is likely due to a class-
 ### One-Click Full Pipeline (Recommended)
 `main.py` automatically detects missing ResNet baselines and trains them on demand before running evaluations:
 
-python main.py
+ main.py
