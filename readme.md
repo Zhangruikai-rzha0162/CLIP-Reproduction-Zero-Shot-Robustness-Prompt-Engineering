@@ -4,27 +4,29 @@ Reproduction of core CLIP paper experiments on consumer hardware (RTX 5060 Lapto
 
 ## Experiments
 
-1. **Prompt Engineering** (Figure 4) — CIFAR-10 / CIFAR-100 / STL-10
+1. **Prompt Engineering** (Figure 4 style as the Clip Paper) — CIFAR-10 / CIFAR-100 / STL-10
 2. **Robustness** — CIFAR-10-C synthetic corruptions (Gaussian, Blur, Pixelate, Contrast)
 3. **Fine-grained Classification** — Oxford-IIIT Pets & Flowers-102 with domain-specific prompts
 
 ## Quick Start
 
+### One-Click Full Pipeline (Recommended)
+`main.py` automatically detects missing ResNet baselines and trains them on demand before running evaluations
 
 # 1. Install dependencies
 pip install -r requirements.txt
 
 # 2. Run the full pipeline
- main.py
+ `main.py`
 
 # Or run modules independently
- train_resnet.py --dataset CIFAR10 --epochs 30
+ `train_resnet.py` --dataset CIFAR10 --epochs 30
 
- eval_prompt.py
+ `eval_prompt.py`
 
- eval_robustness.py
+ `eval_robustness.py`
 
- eval_finegrained.py
+ `eval_finegrained.py`
 
 ### Prompt Engineering Results (Wilson 95% CI)
 
@@ -72,9 +74,3 @@ pip install -r requirements.txt
 <img src="results/finegrained_prompt_comparison.png" width="800"/>
 Note: Flowers-102 accuracy appears unusually low. This is likely due to a class-name mismatch between the dataset labels and the CLIP text prompts. Consider verifying classnames in eval_finegrained.py.
 
-## Quick Start
-
-### One-Click Full Pipeline (Recommended)
-`main.py` automatically detects missing ResNet baselines and trains them on demand before running evaluations:
-
- main.py
